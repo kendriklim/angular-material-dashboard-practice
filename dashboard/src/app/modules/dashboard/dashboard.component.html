@@ -8,16 +8,16 @@
 
 <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
     <mat-card fxFlex="25">
-        <app-widget-card label="New users" total="12k" percentage="50"></app-widget-card>
+        <app-widget-card label="New users - dashboard.html" total="12" percentage="50" [data]="cards"></app-widget-card>
     </mat-card>
     <mat-card fxFlex="25">
-        <app-widget-card label="Users retention" total="10k" percentage="40"></app-widget-card>
+        <app-widget-card label="Users retention" total="10" percentage="40" [data]="cards"></app-widget-card>
     </mat-card>
     <mat-card fxFlex="25">
-        <app-widget-card label="Users engagement" total="8k" percentage="30"></app-widget-card>
+        <app-widget-card label="Users engagement" total="8k" percentage="30" [data]="cards"></app-widget-card>
     </mat-card>
     <mat-card fxFlex="25">
-        <app-widget-card label="Referral" total="6k" percentage="20"></app-widget-card>
+        <app-widget-card label="Referral" total="6k" percentage="20" [data]="cards"></app-widget-card>
     </mat-card>
 </div>
 
@@ -30,6 +30,6 @@
         Table
     </div>
     <div fxFlex="40">
-        <app-widget-pie></app-widget-pie>
+        <app-widget-pie [data]="pieChart"></app-widget-pie>
     </div>
 </div>
